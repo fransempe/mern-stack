@@ -6,7 +6,7 @@ import './App.css';
 
 import Navigation from './components/Navigation'
 import NotesList from './components/NotesList'
-import CreateNotes from './components/CreateNotes'
+import CreateNote from './components/CreateNote'
 import CreateUsers from './components/CreateUsers'
 
 function App() {
@@ -16,8 +16,8 @@ function App() {
       
       <div className="container p-4">
         <Route path="/" exact component={NotesList}/>
-        <Route path="/edit/:id" component={CreateNotes}/>
-        <Route path="/create" component={CreateNotes}/>
+        <Route path="/edit/:id" component={CreateNote}/>
+        <Route path="/create" component={CreateNote}/>
         <Route path="/user" component={CreateUsers}/>
       </div>
 
